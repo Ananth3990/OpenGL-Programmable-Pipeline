@@ -1,0 +1,7 @@
+#version 440 core
+		in vec4 vPosition;
+		uniform mat4 u_mvp_matrix;
+		void main(void)
+		{
+		gl_Position = u_mvp_matrix * vPosition;
+		}
